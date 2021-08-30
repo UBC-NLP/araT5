@@ -33,10 +33,10 @@ The rest of this repository provides more information about our new language mod
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
 ```
 @inproceedings{abdul-mageed-etal-2021-arbert,
-    title = "{ARBERT} {\&} {MARBERT}: Deep Bidirectional Transformers for {A}rabic",
-    author = "Abdul-Mageed, Muhammad  and
+    title = "{AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation",
+    author = "Nagoudi, El Moatez Billah  and
       Elmadany, AbdelRahim  and
-      Nagoudi, El Moatez Billah",
+      Abdul-Mageed, Muhammad",
     booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
     month = aug,
     year = "2021",
@@ -44,9 +44,7 @@ If you use our AraT5 models for your scientific publication, or if you find the 
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.acl-long.551",
     doi = "10.18653/v1/2021.acl-long.551",
-    pages = "7088--7105",
-    abstract = "Pre-trained language models (LMs) are currently integral to many natural language processing systems. Although multilingual LMs were also introduced to serve many languages, these have limitations such as being costly at inference time and the size and diversity of non-English data involved in their pre-training. We remedy these issues for a collection of diverse Arabic varieties by introducing two powerful deep bidirectional transformer-based models, ARBERT and MARBERT. To evaluate our models, we also introduce ARLUE, a new benchmark for multi-dialectal Arabic language understanding evaluation. ARLUE is built using 42 datasets targeting six different task clusters, allowing us to offer a series of standardized experiments under rich conditions. When fine-tuned on ARLUE, our models collectively achieve new state-of-the-art results across the majority of tasks (37 out of 48 classification tasks, on the 42 datasets). Our best model acquires the highest ARLUE score (77.40) across all six task clusters, outperforming all other models including XLM-R Large ( 3.4x larger size). Our models are publicly available at https://github.com/UBC-NLP/marbert and ARLUE will be released through the same repository.",
-}
+    pages = "7088--7105",}
 
 ```
 
