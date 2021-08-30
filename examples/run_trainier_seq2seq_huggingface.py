@@ -53,7 +53,7 @@ from transformers import (
 from transformers.trainer_utils import get_last_checkpoint, is_main_process
 
 # cache_dir="/project/6007993/elmadany/T5/cache_dir" #Cedar
-cache_dir="/scratch/st-amuham01-1/elmadany/T5/cache_dir" #Sockeye
+cache_dir="/tmp/AraT5_cache_dir" #Sockeye
 #with FileLock(".lock") as lock:
 #    nltk.download("punkt", quiet=True)
 
