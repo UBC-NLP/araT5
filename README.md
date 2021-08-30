@@ -1,5 +1,5 @@
 # AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation
-
+<img src="araT5.jpg" alt="drawing" width="30%" height="30%" align="right"/>
 # What is the repository is about?
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](Add_LINK_here). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet/sub>**, and **AraT5**: Three powerful Arabic-specific text-to-text Transformer based models.
