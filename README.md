@@ -132,7 +132,7 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 #  4. How to use AraT5 model
 
-**AraT5** Fine-Tuning demo with PyTorch checkpoint for  News Title Generation on the Aranews dataset [COLAB](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)
+**AraT5** Fine-Tuning demo with PyTorch checkpoint for  News Title Generation on the Aranews dataset [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)
 
 ## 5. Ethics
 
