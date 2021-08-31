@@ -29,7 +29,7 @@ The rest of this repository provides more information about our new language mod
 - [3. AraT5 Evaluation](#3-model-evaluation)
   - [3.1 Machine Translation](#31-machine-translation)
   - [3.2 Text Summarization](#32-text-summarization)
-  - [3.3 News Titl and Question Generation](#34-news-question-generation)
+  - [3.3 News Titl and Question Generation](#33-news-question-generation)
 - [4. How to use AraT5 model](#4-how-to-use-arat5-model)
 - [5. Ethics](#5-ethics)
 - [6. AraT5 Models Checkpoints](#6-arat5-models-checkpoints)
@@ -104,17 +104,29 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 ### 3.1 Machine Translation
 
-
+|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
+|---------|--------|--------|-------|------|
+|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
+|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
+|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
+|[Abu Farha and Magdy (2017)](https://www.aclweb.org/anthology/2020.osact-1.5)|ArSarcasm<sub>Sent</sub> (3)   |   8.4K | -      |  2.K | 
+|[Elmadany et al. (2018)](https://www.semanticscholar.org/paper/ArSAS-%3A-An-Arabic-Speech-Act-and-Sentiment-Corpus-Elmadany-Mubarak/d32d3bb226f1738f72c415c6b03b5ad66ff604a4)|ArSAS (3)                           |  24.7K | -      |  3.6K | 
 
 ### 3.2 Text Summarization
 
+|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
+|---------|--------|--------|-------|------|
+|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
+|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
+|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
 
+### 3.3 News Titl and Question Generation
 
-### 3.3 News Title Generation
+|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
+|---------|--------|--------|-------|------|
+|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
+|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
 
-
-
-### 3.4 Question Generation
 
 
 
