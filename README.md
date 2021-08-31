@@ -19,7 +19,7 @@ The rest of this repository provides more information about our new language mod
   - [1.1 Training Data](#11-training-data)
   - [1.2 Models Architecture](#12-models-architecture)
   - [1.3 AraT5 Models](#13-arat5-models)
-- [2. Our Benchmark: ARGNE](#2-our-benchmark-ARGNE)
+- [2. ARGNE Benchmark and AraT5 Evaluation](#2-our-benchmark-ARGNE)
   - [2.1 Machine Translation](#21-machine-translation)
   - [2.2 Text Summarization](#22-text-summarization)
   - [2.3 News Title Generation](#23-news-title-generation)
@@ -65,11 +65,8 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 
 
-# 3. AraT5 Evaluation
 
-
-
-### 3.1 Machine Translation
+### 2.1 Machine Translation
 
 |**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
 |---------|--------|--------|-------|------|
@@ -79,24 +76,24 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |[Abu Farha and Magdy (2017)](https://www.aclweb.org/anthology/2020.osact-1.5)|ArSarcasm<sub>Sent</sub> (3)   |   8.4K | -      |  2.K | 
 |[Elmadany et al. (2018)](https://www.semanticscholar.org/paper/ArSAS-%3A-An-Arabic-Speech-Act-and-Sentiment-Corpus-Elmadany-Mubarak/d32d3bb226f1738f72c415c6b03b5ad66ff604a4)|ArSAS (3)                           |  24.7K | -      |  3.6K | 
 
-### 3.2 Text Summarization
+### 2.2 Text Summarization
 
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|   | Rouge1 | 62.98 | 60.74  | 59.54 | 54.61 |   
-| EASC  | Rouge2 | 51.93 | 48.89 | 47.37 | 43.58 |   
-|   | RougeL | 62.98 | 60.73 | 59.55 | 54.55 |      
-| | Rouge1 |  71.63 | 74.61 | 72.64 |  73.48 |   
-| WikiLin| Rouge2 | 63.60 |  67.00  | 64.21| 65.09 |  
-| | RougeL | 71.56 | 74.52| 72.57 | 73.37|     
+|   | Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
+| EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)  | Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
+|   | RougeL | **62.98** | 60.73 | 59.55 | 54.55 |      
+| | Rouge1 |  71.63 | **74.61** | 72.64 |  73.48 |   
+| WikiLin [Alami et al. (2021)](https://www.lancaster.ac.uk/people/elhaj/docs/LREC2010-MTurk-Final_v2.pdf)| Rouge2 | 63.60 | **67.00** | 64.21| 65.09 |  
+| | RougeL | 71.56 | **74.52**| 72.57 | 73.37|     
 
 
-### 3.3 News Titl and Question Generation
+### 2.3 News Titl and Question Generation
 
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ARGEN<sub>MT</sub> | BLEU | 19:49 20:00 20:61 20:51   
-| ARGEN<sub>QG</sub>  | BLEU | 51.93 | 48.89 | 47.37 | 43.58 |   
+|  ARGEN<sub>MT</sub> | BLEU | 19.49 | 20.00 | 20.61  | 20.51  | 
+| ARGEN<sub>QG</sub>  | BLEU | 15.29 | 12.06 | 14.18 | 16.99|   
 
 
 
