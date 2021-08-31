@@ -22,7 +22,7 @@ The rest of this repository provides more information about our new language mod
   - [1.2 Models Architecture](#12-models-architecture)
   - [1.3 AraT5 Models](#13-arat5-models)
 - [2. Our Benchmark: ARGNE](#2-our-benchmark-ARGNE)
-  - [2.1 Machine Translation](#21-machine--translation)
+  - [2.1 Machine Translation](#21-machine-translation)
   - [2.2 Text Summarization](#22-text-summarization)
   - [2.3 News Title Generation](#23-news-generation)
   - [2.4 Question Generation](#24-question-generation)
@@ -55,6 +55,20 @@ We pre-train three powerful variants of the text-to-text transformer (T5) model 
 *  **AraT5**:  trained on both Twitter and MSA data.
 
 
+## 2. Our Benchmark: ARGNE
+To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for   A new benchmark for Arabic language generation and evaluation.   ARGNE is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGNE  is  collected  from  a  total  of  ten datasets, including two new large datasets pro-posed in this work.
+
+
+
+### 2.1 Machine Translation
+
+|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
+|---------|--------|--------|-------|------|
+|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
+|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
+|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
+|[Abu Farha and Magdy (2017)](https://www.aclweb.org/anthology/2020.osact-1.5)|ArSarcasm<sub>Sent</sub> (3)   |   8.4K | -      |  2.K | 
+|[Elmadany et al. (2018)](https://www.semanticscholar.org/paper/ArSAS-%3A-An-Arabic-Speech-Act-and-Sentiment-Corpus-Elmadany-Mubarak/d32d3bb226f1738f72c415c6b03b5ad66ff604a4)|ArSAS (3)                           |  24.7K | -      |  3.6K | 
 
 ## 7. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
@@ -64,14 +78,9 @@ If you use our AraT5 models for your scientific publication, or if you find the 
     author = "Nagoudi, El Moatez Billah  and
       Elmadany, AbdelRahim  and
       Abdul-Mageed, Muhammad",
-    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    booktitle = "https://arxiv.org/pdf/2104.07483",
     month = aug,
-    year = "2021",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2021.acl-long.551",
-    doi = "10.18653/v1/2021.acl-long.551",
-    pages = "7088--7105",}
+    year = "2021"}
 
 ```
 
