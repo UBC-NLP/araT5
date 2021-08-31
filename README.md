@@ -60,40 +60,9 @@ We pre-train three powerful variants of the text-to-text transformer (T5) model 
 *  **AraT5**:  trained on both Twitter and MSA data.
 
 
-## 2. Our Benchmark: ARGNE
+## 2. ARGNE Benchmark and AraT5 Evaluation
 To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for   A new benchmark for Arabic language generation and evaluation.   ARGNE is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGNE  is  collected  from  a  total  of  ten datasets, including two new large datasets pro-posed in this work.
 
-
-
-### 2.1 Machine Translation
-
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
-|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
-|[Abu Farha and Magdy (2017)](https://www.aclweb.org/anthology/2020.osact-1.5)|ArSarcasm<sub>Sent</sub> (3)   |   8.4K | -      |  2.K | 
-|[Elmadany et al. (2018)](https://www.semanticscholar.org/paper/ArSAS-%3A-An-Arabic-Speech-Act-and-Sentiment-Corpus-Elmadany-Mubarak/d32d3bb226f1738f72c415c6b03b5ad66ff604a4)|ArSAS (3)                           |  24.7K | -      |  3.6K | 
-
-### 2.2 Text Summarization
-
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
-|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
-
-### 2.3 News Title Generation
-
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-
-### 2.4 Question Generation
-
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
 
 
 # 3. AraT5 Evaluation
@@ -112,18 +81,23 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 ### 3.2 Text Summarization
 
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
-|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
+| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|   | Rouge1 | 62.98 | 60.74  | 59.54 | 54.61 |   
+| EASC  | Rouge2 | 51.93 | 48.89 | 47.37 | 43.58 |   
+|   | RougeL | 62.98 | 60.73 | 59.55 | 54.55 |      
+| | Rouge1 |  71.63 | 74.61 | 72.64 |  73.48 |   
+| WikiLin| Rouge2 | 63.60 |  67.00  | 64.21| 65.09 |  
+| | RougeL | 71.56 | 74.52| 72.57 | 73.37|     
+
 
 ### 3.3 News Titl and Question Generation
 
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
+| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  ARGEN<sub>MT</sub> | BLEU | 19:49 20:00 20:61 20:51   
+| ARGEN<sub>QG</sub>  | BLEU | 51.93 | 48.89 | 47.37 | 43.58 |   
+
 
 
 
