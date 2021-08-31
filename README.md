@@ -29,8 +29,7 @@ The rest of this repository provides more information about our new language mod
 - [3. AraT5 Evaluation](#3-model-evaluation)
   - [3.1 Machine Translation](#31-machine-translation)
   - [3.2 Text Summarization](#32-text-summarization)
-  - [3.3 News Title Generation](#33-news-title-generation)
-  - [3.4 Question Generation](#34-question-generation)
+  - [3.3 News Titl and Question Generation](#34-news-question-generation)
 - [4. How to use AraT5 model](#4-how-to-use-arat5-model)
 - [5. Ethics](#5-ethics)
 - [6. AraT5 Models Checkpoints](#6-arat5-models-checkpoints)
@@ -155,11 +154,11 @@ AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website fo
 
 | **Model**   | **Link** | 
 |---------|:------------------:|
-| **AraT5<sub>MSA</sub>** Base |      [https://huggingface.co/UBC-NLP/AraT5-base](https://huggingface.co/UBC-NLP/AraT5-base)     |     
-| **AraT5<sub>Tweet</sub>** Base |       [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-msa-base)    |      
-|  **AraT5** Base |     [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-base)       |  
-| **AraT5<sub>MSA</sub>** Small |       [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base)   |     
-| **AraT5<sub>Tweet</sub>** Small |      [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base) |  
+| **AraT5-msa-base**  |     [https://huggingface.co/UBC-NLP/AraT5-base](https://huggingface.co/UBC-NLP/AraT5-msa-base)     |     
+| **AraT5-tweet-base**  |   [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-msa-base)    |      
+|  **AraT5-msa-base** |     [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-base)       |  
+| **AraT5-msa-small** |     [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base)   |     
+| **AraT5-tweet-small**|    [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base) |  
 
 ## 7. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
