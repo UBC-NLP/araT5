@@ -164,7 +164,7 @@ AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website fo
 ## 7. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
 ```
-@inproceedings{abdul-mageed-etal-2021-arbert,
+@inproceedings{araT5-2021,
     title = "{AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation",
     author = "Nagoudi, El Moatez Billah  and
       Elmadany, AbdelRahim  and
