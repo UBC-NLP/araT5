@@ -180,7 +180,7 @@ If you use our AraT5 models for your scientific publication, or if you find the 
     author = "Nagoudi, El Moatez Billah  and
       Elmadany, AbdelRahim  and
       Abdul-Mageed, Muhammad",
-    booktitle = "https://arxiv.org/pdf/2104.07483",
+    booktitle = "https://arxiv.org/pdf/xxx.xxxxx",
     month = aug,
     year = "2021"}
 
