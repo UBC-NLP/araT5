@@ -5,8 +5,8 @@
 # What is the repository is about?
 
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](link). In this is the repository we introduce:
-* Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet/sub>**, and **AraT5**: Three powerful Arabic-specific text-to-text Transformer based models.
-* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation
+* Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: Three powerful Arabic-specific text-to-text Transformer based models;
+* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation;
 * evaluate  ```AraT5``` models on ```ARGNE``` and compare against available language models.
 
 Our models establish new state-of-the-art (SOTA) on  xx out of the yy datasets.
@@ -18,15 +18,42 @@ The rest of this repository provides more information about our new language mod
 
 ## Table of Contents
 - [1 Our Language Models](#1-Our-Language-Models)
-  - [1.1 AraT5<sub>MSA</sub>](#11-AraT5--msa)
-  - [1.2 AraT5<sub>Tweet</sub>](#12-AraT5--Tweet)
-  - [1.3 AraT5](#13-AraT5)
-  - [1.4 Training Data and Vocabulary](#14-training-data-and-vocabulary)
+  - [1.1 Training Data](#11-training-data)
+  - [1.2 Models Architecture](#12-models-architecture)
+  - [1.3 AraT5 Models](#13-arat5-models)
 - [2. Our Benchmark: ARGNE](#2-our-benchmark-ARGNE)
   - [2.1 Machine Translation](#21-machine--translation)
   - [2.2 Text Summarization](#22-text-summarization)
   - [2.3 News Title Generation](#23-news-generation)
   - [2.4 Question Generation](#24-question-generation)
+
+
+## 1. Our Language Models
+
+
+
+## 1.1 Training Data
+
+* **MSA Training Data**: We use 70GB of MSA text 7.1B tokens) from the following sources: [AraNews](nagoudi2020machine), [El-Khair](elkhair-2016), [Gigaword](https://catalog.ldc.upenn.edu/LDC2009T30), [OSCAR](suarez2019asynchronous), [OSIAN](zeroual2019osian),  Wikipedia Arabic, and [Hindawi Books](https://www.hindawi.org/books/}{https://www.hindawi.org/books).
+
+* **Twitter Training Data**: We randomly sample 1.5B Arabic tweets from a large in-house dataset of about 10B tweets. We use string matching to only include tweets with at least 3 Arabic words, regardless whether the tweet has non-Arabic string or not.  %That is, we do not remove non-Arabic so long as the tweet meets the $3$ Arabic word criterion. 
+The dataset makes up 178GB of text 21B tokens. 
+
+
+## 1.2 Models Architecture
+
+To train our AraT5, we use the same architecture as ```T5-base``` [(Raffel 2019)](https://arxiv.org/abs/1910.10683) where both  encoder and decoder  has 12 layers
+each with 12 attention heads, and 768 hidden units.
+
+
+## 1.3 AraT5 Models
+
+
+We pre-train three powerful variants of the text-to-text transformer (T5) model dedicated to Modern Standard Arabic (MSA) and Arabic dialects, AraT5. AraT5 comes. AraT5 comes in three flavors:  
+*  **AraT5<sub>MSA</sub>**:  trained on MSA data exclusively
+*  **AraT5<sub>Tweet</sub>**: trained on Twitter data (mix of MSA and dialectal Arabic), 
+*  **AraT5**:  trained on both Twitter and MSA data.
+
 
 
 ## 7. Citation
