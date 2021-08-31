@@ -31,9 +31,9 @@ The rest of this repository provides more information about our new language mod
   - [3.2 Text Summarization](#32-text-summarization)
   - [3.3 News Title Generation](#33-news-title-generation)
   - [3.4 Question Generation](#34-question-generation)
-- [4. How to use AraT5 model](#4-how-to-use-arat5)
+- [4. How to use AraT5 model](#4-how-to-use-arat5-model)
 - [5. Ethics](#5-ethics)
-- [6. Download AraT5 Models Checkpoints](#6-download-arat5-checkpoints)
+- [6. AraT5 Models Checkpoints](#6-arat5-models-checkpoints)
 - [7. Citation](#7-citation)
 - [8. Acknowledgments](#8-acknowledgments)
 
@@ -51,8 +51,7 @@ The dataset makes up 178GB of text 21B tokens.
 
 ## 1.2 Models Architecture
 
-To train our AraT5, we use the same architecture as ```T5-base``` [(Raffel 2019)](https://arxiv.org/abs/1910.10683) where both  encoder and decoder  has 12 layers
-each with 12 attention heads, and 768 hidden units.
+To train our AraT5, we use the same architecture as ```T5-base``` and  ```T5-small``` [(Raffel 2019)](https://arxiv.org/abs/1910.10683) where both  encoder and decoder  has 12 layers each with 12 attention heads, and 768 hidden units.
 
 
 ## 1.3 AraT5 Models
@@ -123,8 +122,44 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 
 #  4. How to use AraT5 model
-#  5. Ethics
-# 6. Download AraT5 Models Checkpoints
+
+**AraT5** Fine-Tuning demo with PyTorch checkpoint for  News Title Generation on the Aranews dataset [Colab](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b)
+
+## 5. Ethics
+
+Our models are developed using data from the public domain. 
+We provide access to our models to accelerate scientific research with no liability on our part.
+Please use our models and benchmark only ethically.
+This includes, for example, respect and protection of people's privacy.
+We encourage all researchers who decide to use our models to adhere to the highest standards.
+For example, if you apply our models on Twitter data, we encourage you to review Twitter policy at [Twitter policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy). For example, Twitter provides the following policy around use of [sensitive information](https://developer.twitter.com/en/developer-terms/more-on-restricted-use-cases): 
+
+### Sensitive information
+
+You should be careful about using Twitter data to derive or infer potentially sensitive characteristics about Twitter users. Never derive or infer, or store derived or inferred, information about a Twitter user’s:
+
+- Health (including pregnancy)
+- Negative financial status or condition
+- Political affiliation or beliefs
+- Racial or ethnic origin
+- Religious or philosophical affiliation or beliefs
+- Sex life or sexual orientation
+- Trade union membership
+- Alleged or actual commission of a crime
+- Aggregate analysis of Twitter content that does not store any personal data (for example, user IDs, usernames, and other identifiers) is permitted, provided that the analysis also complies with applicable laws and all parts of the Developer Agreement and Policy.
+
+---
+# 6.  AraT5 Models Checkpoints 
+
+AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website for direct download and use ```exclusively for research```. `For commercial use, please contact the authors via email @ (*muhammad.mageed[at]ubc[dot]ca*).`
+
+| **Model**   | **Link** | 
+|---------|:------------------:|
+| **AraT5<sub>MSA</sub>** Base |      [https://huggingface.co/UBC-NLP/AraT5-base](https://huggingface.co/UBC-NLP/AraT5-base)     |     
+| **AraT5<sub>Tweet</sub>** Base |       [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-msa-base)    |      
+|  **AraT5** Base |     [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-base)       |  
+| **AraT5<sub>MSA</sub>** Small |       [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base)   |     
+| **AraT5<sub>Tweet</sub>** Small |      [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base) |  
 
 ## 7. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
