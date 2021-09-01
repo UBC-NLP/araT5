@@ -64,11 +64,24 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 ### 2.1 Machine Translation
 
-| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
-|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
-| ARGEN<sub>QG</sub> [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+#### 2.1.1  Arabic Dialecte
 
+| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
+|  Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+|  MADAR I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  MADAR II [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  QAraCy [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+
+#### 2.1.2  MSA
+
+| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  Bible II [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
+|  MADAR I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  IWSLT  [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  UN [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
 
 ### 2.2 Text Summarization
 
@@ -95,11 +108,11 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 
 
-#  4. How to use AraT5 model
+#  3. How to use AraT5 model
 
 **AraT5** Fine-Tuning demo with PyTorch checkpoint for  News Title Generation on the Aranews dataset [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)
 
-## 5. Ethics
+## 4. Ethics
 
 Our models are developed using data from the public domain. 
 We provide access to our models to accelerate scientific research with no liability on our part.
@@ -123,7 +136,7 @@ You should be careful about using Twitter data to derive or infer potentially se
 - Aggregate analysis of Twitter content that does not store any personal data (for example, user IDs, usernames, and other identifiers) is permitted, provided that the analysis also complies with applicable laws and all parts of the Developer Agreement and Policy.
 
 ---
-# 6.  AraT5 Models Checkpoints 
+# 5.  AraT5 Models Checkpoints 
 
 AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website for direct download and use ```exclusively for research```. `For commercial use, please contact the authors via email @ (*muhammad.mageed[at]ubc[dot]ca*).`
 
@@ -135,7 +148,7 @@ AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website fo
 | **AraT5-msa-small** |     [https://huggingface.co/UBC-NLP/AraT5-msa-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base)   |     
 | **AraT5-tweet-small**|    [https://huggingface.co/UBC-NLP/AraT5-tweet-base](https://huggingface.co/UBC-NLP/AraT5-tweet-base) |  
 
-## 7. Citation
+## 6. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
 ```
 @inproceedings{araT5-2021,
@@ -151,5 +164,5 @@ If you use our AraT5 models for your scientific publication, or if you find the 
 
 ---
 
-## 8. Acknowledgments
+## 7. Acknowledgments
 We gratefully acknowledge support from the Natural Sciences and Engineering Research Council  of Canada, the  Social  Sciences and  Humanities  Research  Council  of  Canada, Canadian  Foundation  for  Innovation,  [ComputeCanada](www.computecanada.ca) and [UBC ARC-Sockeye](https://doi.org/10.14288/SOCKEYE). We  also  thank  the  [Google TensorFlow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc) program for providing us with free TPU access.
