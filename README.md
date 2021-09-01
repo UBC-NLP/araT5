@@ -68,8 +68,10 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
-|  Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| LEV | 19.49 | 20.00 | **20.61** | 20.51  | 
+|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| Egy | 19.49 | 20.00 | **20.61** | 20.51  | 
+|  Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | Tun | 15.29 | 12.06 | 14.18 | **16.99**|   
+| Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf)   | Mor | 15.29 | 12.06 | 14.18 | **16.99**|   
 |  MADAR I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
 |  MADAR II [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
 |  QAraCy [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
