@@ -24,15 +24,11 @@ The rest of this repository provides more information about our new language mod
   - [2.2 Text Summarization](#22-text-summarization)
   - [2.3 News Title Generation](#23-news-title-generation)
   - [2.4 Question Generation](#24-question-generation)
-- [3. AraT5 Evaluation](#3-model-evaluation)
-  - [3.1 Machine Translation](#31-machine-translation)
-  - [3.2 Text Summarization](#32-text-summarization)
-  - [3.3 News Titl and Question Generation](#33-news-question-generation)
-- [4. How to use AraT5 model](#4-how-to-use-arat5-model)
-- [5. Ethics](#5-ethics)
-- [6. AraT5 Models Checkpoints](#6-arat5-models-checkpoints)
-- [7. Citation](#7-citation)
-- [8. Acknowledgments](#8-acknowledgments)
+- [3. How to use AraT5 model](#3-how-to-use-arat5-model)
+- [4. Ethics](#5-ethics)
+- [5. AraT5 Models Checkpoints](#5-arat5-models-checkpoints)
+- [6. Citation](#6-citation)
+- [7. Acknowledgments](#7-acknowledgments)
 
 ## 1. Our Language Models
 
@@ -68,13 +64,11 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 ### 2.1 Machine Translation
 
-|**Reference**| **Data  (#classes)**     | **TRAIN**   | **DEV**    | **TEST**   |
-|---------|--------|--------|-------|------|
-|[Alomari et al. (2017)](https://www.researchgate.net/publication/317501447_Arabic_Tweets_Sentimental_Analysis_Using_Machine_Learning)|AJGT (2)      |   1.4K | -      |    361 | 
-|[Abdul-Mageed et al. (2020b)](https://www.aclweb.org/anthology/2020.osact-1.3) |AraNET<sub>Sent</sub> (2)      | 100K | 14.3K | 11.8K |
-|[Al-Twairesh et al. (2017)](https://www.aclweb.org/anthology/P16-1066)|AraSenTi (3)          |  11,117 |  1,407 |  1,382 | 
-|[Abu Farha and Magdy (2017)](https://www.aclweb.org/anthology/2020.osact-1.5)|ArSarcasm<sub>Sent</sub> (3)   |   8.4K | -      |  2.K | 
-|[Elmadany et al. (2018)](https://www.semanticscholar.org/paper/ArSAS-%3A-An-Arabic-Speech-Act-and-Sentiment-Corpus-Elmadany-Mubarak/d32d3bb226f1738f72c415c6b03b5ad66ff604a4)|ArSAS (3)                           |  24.7K | -      |  3.6K | 
+| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
+| ARGEN<sub>QG</sub> [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+
 
 ### 2.2 Text Summarization
 
