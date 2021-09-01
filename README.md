@@ -92,8 +92,8 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ARGEN<sub>MT</sub> | BLEU | 19.49 | 20.00 | 20.61  | 20.51  | 
-| ARGEN<sub>QG</sub>  | BLEU | 15.29 | 12.06 | 14.18 | 16.99|   
+|  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
+| ARGEN<sub>QG</sub> [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
 
 
 
