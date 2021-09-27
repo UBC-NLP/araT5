@@ -97,7 +97,7 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 | | RougeL | 71.56 | **74.52**| 72.57 | 73.37|     
 
 
-### 2.3 News Titl and Question Generation
+### 2.3 News Title and Question Generation
 
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
