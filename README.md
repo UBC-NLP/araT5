@@ -112,7 +112,12 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 #  3. How to use AraT5 model
 
-**AraT5** Fine-Tuning demo with PyTorch checkpoint for  News Title Generation on the Aranews dataset [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)This is an example for fine-tuning **AraT5-base** for News Title Generation on the Aranews dataset 
+
+In addition, we release the fine-tuned checkpoint of the News Title Generation (NGT) which is described in the paper. The model available at Huggingface ([UBC-NLP/AraT5-base-title-generation](https://huggingface.co/UBC-NLP/AraT5-base-title-generation)).
+
+For more details, please visit our own [GitHub](https://github.com/UBC-NLP/araT5).
+
 
 ## 4. Ethics
 
