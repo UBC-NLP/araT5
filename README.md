@@ -68,22 +68,22 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ADPT [Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf)                   | LEV | 8.33 | 8.32 | **8.52** | 8.42  | 
-|  ADPT [Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf)                   | Egy | 12.57 | 11.25 | 12.38 | **12.92**  | 
-|  Bible I [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | Tun | 8.08 | 5.86 | **8.52** | 7.94|   
-|  Bible I [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
-|  MADAR I  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)            | BLEU | |  
-|  MADAR II  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)           | BLEU | |  
-|  QAraCy  [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | BLEU | |  
+|  ADPT ([Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf))                 | LEV | 8.33 | 8.32 | **8.52** | 8.42  | 
+|  ADPT ([Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf))                  | Egy | 12.57 | 11.25 | 12.38 | **12.92**  | 
+|  Bible I ([Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf))  | Tun | 8.08 | 5.86 | **8.52** | 7.94|   
+|  Bible I ([Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf))  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
+|  MADAR I  ([Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf))            | BLEU | |  
+|  MADAR II  ([Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf))           | BLEU | |  
+|  QAraCy  ([Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf))  | BLEU | |  
 
 #### 2.1.2  MSA
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  Bible II [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)                          | BLEU |   | 
-|  MADAR I  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)                                     | BLEU | |  
-|  IWSLT   [Cettolo et al., 2016](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| BLEU | |  
-|  UN  [Ziemski et al., 2016](https://aclanthology.org/L16-1561.pdf)                                          | BLEU | |  
+|  Bible II ([Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf))                         | BLEU |   | 
+|  MADAR I  ([Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf))                                     | BLEU | |  
+|  IWSLT   ([Cettolo et al., 2016](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf))| BLEU | |  
+|  UN  )[Ziemski et al., 2016](https://aclanthology.org/L16-1561.pdf))                                          | BLEU | |  
 
 ### 2.2 Text Summarization
 
