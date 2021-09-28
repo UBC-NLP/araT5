@@ -64,26 +64,26 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 ### 2.1 Machine Translation
 
-#### 2.1.1  Arabic Dialecte
+#### 2.1.1  Dialictal Arabic
 
-| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| LEV | 19.49 | 20.00 | **20.61** | 20.51  | 
-|  ADPT [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| Egy | 19.49 | 20.00 | **20.61** | 20.51  | 
-|  Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | Tun | 15.29 | 12.06 | 14.18 | **16.99**|   
-| Bible I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf)   | Mor | 15.29 | 12.06 | 14.18 | **16.99**|   
-|  MADAR I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
-|  MADAR II [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
-|  QAraCy [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  ADPT [Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf)                   | LEV | 8.33 | 8.32 | **8.52** | 8.42  | 
+|  ADPT [Zbib et al., 2012](https://aclanthology.org/N12-1006.pdf)                   | Egy | 12.57 | 11.25 | 12.38 | **12.92**  | 
+|  Bible I [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | Tun | 8.08 | 5.86 | **8.52** | 7.94|   
+|  Bible I [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
+|  MADAR I  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)            | BLEU | |  
+|  MADAR II  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)           | BLEU | |  
+|  QAraCy  [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)  | BLEU | |  
 
 #### 2.1.2  MSA
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  Bible II [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
-|  MADAR I [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
-|  IWSLT  [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
-|  UN [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|  
+|  Bible II [Sajjad et al., 2020](https://aclanthology.org/2020.coling-main.447.pdf)                          | BLEU |   | 
+|  MADAR I  [Bouamor et al., 2018](https://aclanthology.org/L18-1535.pdf)                                     | BLEU | |  
+|  IWSLT   [Cettolo et al., 2016](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| BLEU | |  
+|  UN  [Ziemski et al., 2016](https://aclanthology.org/L16-1561.pdf)                                          | BLEU | |  
 
 ### 2.2 Text Summarization
 
