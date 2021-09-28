@@ -73,7 +73,7 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |  Bible I [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Tun | 8.08 | 5.86 | **8.52** | 7.94|   
 |  Bible I [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
 |  QAraCy  [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | BLEU | **11.84**  | 11.11  | 11.42  | 10.57| 
-|  MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf)            | ^^ Table 6 shows the results of 25 datasets in the paper |  
+|  MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf)            |  Table 6 shows the results of 25 datasets in the paper|  
  
 
 #### 2.1.2  MSA
@@ -86,11 +86,11 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED15 | 29.39  | 28.2  | 30.37 |  **30.45**|  
 |  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED16 | 28.39  | 27.03 |  **29.37**  | 29.18|  
 |  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| QED16 | **21.09**  | 18.55  | 20.98  | 19.11 |  
-|  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | BLEU |  52.38  | 51.48  |** 53.29**  | 52.96|  
+|  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | BLEU |  52.38  | 51.48  |**53.29**  | 52.96|  
 
 ### 2.2 Text Summarization
 
-| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
 |   | Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
 | EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)  | Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
