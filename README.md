@@ -2,7 +2,7 @@
 
 <img src="AraT5_logo.jpg" alt="AraT5" width="20%" height="20%" align="right"/>
 
-This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](link). In this is the repository we introduce:
+This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
 * Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```;
 * evaluate  ```AraT5``` models on ```ARGNE``` and compare against available language models.
@@ -89,15 +89,19 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | BLEU |  52.38  | 51.48  |**53.29**  | 52.96|  
 
 ### 2.2 Text Summarization
+(1) EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)
+|  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** |
+|:------:|:----------:|:-----------:|:-------:|:------:|
+| Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
+| Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
+| RougeL | **62.98** | 60.73 | 59.55 | 54.55 |   
 
-| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
-|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|   | Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
-| EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)  | Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
-|   | RougeL | **62.98** | 60.73 | 59.55 | 54.55 |      
-| | Rouge1 |  71.63 | **74.61** | 72.64 |  73.48 |   
-| WikiLin [Alami et al. (2021)](https://www.lancaster.ac.uk/people/elhaj/docs/LREC2010-MTurk-Final_v2.pdf)| Rouge2 | 63.60 | **67.00** | 64.21| 65.09 |  
-| | RougeL | 71.56 | **74.52**| 72.57 | 73.37|     
+(2) WikiLin [Alami et al. (2021)](https://www.lancaster.ac.uk/people/elhaj/docs/LREC2010-MTurk-Final_v2.pdf)
+|  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
+|:------:|:----------:|:-----------:|:-------:|:------:|
+| Rouge1 |  71.63 | **74.61** | 72.64 |  73.48 |   
+| Rouge2 | 63.60 | **67.00** | 64.21| 65.09 |  
+| RougeL | 71.56 | **74.52**| 72.57 | 73.37|     
 
 
 ### 2.3 News Title and Question Generation
@@ -115,13 +119,57 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 #  3. How to use AraT5 model
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)This is an example for fine-tuning **AraT5-base** for News Title Generation on the Aranews dataset 
-
+Below is an example for fine-tuning **AraT5-base** for News Title Generation on the Aranews dataset 
+``` bash
+!python run_trainier_seq2seq_huggingface.py \
+        --learning_rate 5e-5 \
+        --max_target_length 128 --max_source_length 128 \
+        --per_device_train_batch_size 8 --per_device_eval_batch_size 8 \
+        --model_name_or_path "UBC-NLP/AraT5-base" \
+        --output_dir "/content/AraT5_FT_title_generation" --overwrite_output_dir \
+        --num_train_epochs 3 \
+        --train_file "/content/ARGEn_title_genration_sample_train.tsv" \
+        --validation_file "/content/ARGEn_title_genration_sample_valid.tsv" \
+        --task "title_generation" --text_column "document" --summary_column "title" \
+        --load_best_model_at_end --metric_for_best_model "eval_bleu" --greater_is_better True --evaluation_strategy epoch --logging_strategy epoch --predict_with_generate\
+        --do_train --do_eval
+```
+For the complete example, pleae [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GFOGolWPIfDvYdSNdGFrOXwu3Gu28k2b?usp=sharing)
 In addition, we release the fine-tuned checkpoint of the News Title Generation (NGT) which is described in the paper. The model available at Huggingface ([UBC-NLP/AraT5-base-title-generation](https://huggingface.co/UBC-NLP/AraT5-base-title-generation)).
 
-For more details, please visit our own [GitHub](https://github.com/UBC-NLP/araT5).
+```python
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+tokenizer = AutoTokenizer.from_pretrained("UBC-NLP/AraT5-base-title-generation")  
+model = AutoModelForSeq2SeqLM.from_pretrained("UBC-NLP/AraT5-base-title-generation")
+
+Document = "تحت رعاية صاحب السمو الملكي الأمير سعود بن نايف بن عبدالعزيز أمير المنطقة الشرقية اختتمت غرفة الشرقية مؤخرا، الثاني من مبادرتها لتأهيل وتدريب أبناء وبنات المملكة ضمن مبادرتها المجانية للعام 2019 حيث قدمت 6 برامج تدريبية نوعية. وثمن رئيس مجلس إدارة الغرفة، عبدالحكيم العمار الخالدي، رعاية سمو أمير المنطقة الشرقية للمبادرة، مؤكدا أن دعم سموه لجميع أنشطة ."
+
+encoding = tokenizer.encode_plus(Document,pad_to_max_length=True, return_tensors="pt")
+input_ids, attention_masks = encoding["input_ids"], encoding["attention_mask"]
 
 
+outputs = model.generate(
+    input_ids=input_ids, attention_mask=attention_masks,
+    max_length=256,
+    do_sample=True,
+    top_k=120,
+    top_p=0.95,
+    early_stopping=True,
+    num_return_sequences=5
+)
+
+for id, output in enumerate(outputs):
+    title = tokenizer.decode(output, skip_special_tokens=True,clean_up_tokenization_spaces=True)
+    print("title#"+str(id), title)
+```
+**The output**
+```
+title#0 غرفة الشرقية تختتم المرحلة الثانية من مبادرتها لتأهيل وتدريب أبناء وبنات المملكة
+title#1 غرفة الشرقية تختتم الثاني من مبادرة تأهيل وتأهيل أبناء وبناتنا
+title#2 سعود بن نايف يختتم ثانى مبادراتها لتأهيل وتدريب أبناء وبنات المملكة
+title#3 أمير الشرقية يرعى اختتام برنامج برنامج تدريب أبناء وبنات المملكة
+title#4 سعود بن نايف يرعى اختتام مبادرة تأهيل وتدريب أبناء وبنات المملكة
+```
 ## 4. Ethics
 
 Our models are developed using data from the public domain. 
