@@ -1,4 +1,4 @@
-# AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation
+# AraT5: Text-to-Text Transformers for Arabic Language Generation
 
 <img src="AraT5_CR.png" alt="AraT5" width="55%" height="45%" align="right"/>
 
@@ -115,11 +115,15 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 |  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
 | ARGEN<sub>QG</sub> [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
 
+### 2.5 Paraphrasing
+| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  ARGEN<sub>PPH I</sub> [(Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
+| ARGEN<sub>PPH II</sub> [Alian et al. (2021)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
 
+### 2.5 Transliteration
 
-
-
-
+### 2.5 Code-Switched Translation
 
 #  3. How to use AraT5 model
 
