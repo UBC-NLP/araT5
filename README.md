@@ -124,12 +124,29 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 | ARGEN<sub>TR</sub> [Song et al. (2014)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 60.81 | 59.55 | **65.88** | 62.51*| 
 
 ### 2.5 Code-Switched Translation
-| **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+| **Dataset**  |  **split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ARGEN<sub>PPH I</sub> [(Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.32 | 18.17 | **19.38** | 19.03  | 
-| ARGEN<sub>PPH II</sub> [Alian et al. (2021)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 19.25 | 17.34 | 19.43 | **18.42**|   
-
+|   ARGEN<sub>CS</sub> Natural | ALG-FR &rarr; FR  | 23.83	| **28.19**	| $26.27$	| 26.17 |
+|   ARGEN<sub>CS</sub> Natural | JOR-EN &rarr; EN | **23.06**	| 21.60	| 21.58	| 20.45 | 
+| ARGEN<sub>CS</sub> Synthetic  | MSA-FR &rarr; FR | 11.06	| 8.99	| **11.53**	| 11.42 |
+| ARGEN<sub>CS</sub> Synthetic | MSA-EN &rarr; EN | 19.25 | 17.34 | 19.43 | **18.42**|  
+| ARGEN<sub>CS</sub> Synthetic | MSA-FR &rarr; MSA | 12.93	| 12.14	| **14.39**	| 13.92 |
+| ARGEN<sub>CS</sub> Synthetic  | MSA-EN &rarr; MSA | 19.82	| 18.43	| 23.89	| **24.37** |  
+All the data are from: [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068)
 #  3. How to use AraT5 model
+   
+
+   
+
+   
+ 
+   
+
+   
+
+
+   
+
 
 Below is an example for fine-tuning **AraT5-base** for News Title Generation on the Aranews dataset 
 ``` bash
