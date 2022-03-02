@@ -128,7 +128,7 @@ Metric is BLEU. All the splits are from UN corpus [Ziemski et al. (2016)](https:
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
 |  ARGEN<sub>PPH I</sub> [(Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.32 | 18.17 | **19.38** | 19.03  | 
 | ARGEN<sub>PPH II</sub> [Alian et al. (2021)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 19.25 | 17.34 | 19.43 | **18.42**|   
-| ARGEN<sub>TR</sub> [Song et al. (2014)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 60.81 | 59.55 | **65.88** | 62.51*| 
+| ARGEN<sub>TR</sub> [Song et al. (2014)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 60.81 | 59.55 | **65.88** | 62.51| 
 
 ### 2.5 Code-Switched Translation
 | **Dataset**  |  **Type** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
