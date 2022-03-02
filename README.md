@@ -263,7 +263,7 @@ If you use our AraT5 models for your scientific publication, or if you find the 
       Elmadany, AbdelRahim  and
       Abdul-Mageed, Muhammad",
     booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
-    month = aug,
+    month = May,
     year = "2022",
     address = "Online",
     publisher = "Association for Computational Linguistics",
