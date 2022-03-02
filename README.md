@@ -124,15 +124,17 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 | ARGEN<sub>TR</sub> [Song et al. (2014)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 60.81 | 59.55 | **65.88** | 62.51*| 
 
 ### 2.5 Code-Switched Translation
-| **Dataset**  |  **split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
+| **Dataset**  |  **Type** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|   ARGEN<sub>CS</sub> Natural | ALG-FR &rarr; FR  | 23.83	| **28.19**	| $26.27$	| 26.17 |
-|   ARGEN<sub>CS</sub> Natural | JOR-EN &rarr; EN | **23.06**	| 21.60	| 21.58	| 20.45 | 
-| ARGEN<sub>CS</sub> Synthetic  | MSA-FR &rarr; FR | 11.06	| 8.99	| **11.53**	| 11.42 |
-| ARGEN<sub>CS</sub> Synthetic | MSA-EN &rarr; EN | 19.25 | 17.34 | 19.43 | **18.42**|  
-| ARGEN<sub>CS</sub> Synthetic | MSA-FR &rarr; MSA | 12.93	| 12.14	| **14.39**	| 13.92 |
-| ARGEN<sub>CS</sub> Synthetic  | MSA-EN &rarr; MSA | 19.82	| 18.43	| 23.89	| **24.37** |  
-All the data are from: [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068)
+|  ALG-FR &rarr; FR     | Natural | 23.83	| **28.19**	| 26.27	| 26.17 <br>
+| JOR-EN &rarr; EN  |  Natural | **23.06**	| 21.60	| 21.58	| 20.45 | |
+|  MSA-FR &rarr; FR   | Synthetic| 11.06	| 8.99	| **11.53**	| 11.42 |
+|MSA-EN &rarr; EN    | Synthetic | 19.25 | 17.34 | 19.43 | **18.42**|  
+|  MSA-FR &rarr; MSA  | Synthetic| 12.93	| 12.14	| **14.39**	| 13.92 |
+|  MSA-EN &rarr; MSA  | Synthetic  | 19.82	| 18.43	| 23.89	| **24.37** |  
+
+All the **ARGEN<sub>CS</sub>** datasets are from: [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068)
+
 #  3. How to use AraT5 model
    
 
