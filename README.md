@@ -96,10 +96,10 @@ Metric is BLEU.
 
 |  **Spit** | **mT5** | **AraT5<sub>MSA</sub>** |
 |:------:|:----------:|:-----------:|
-| EN &rarr; MSA   | 17.80 | 18.58 | 
-| DE &rarr; MSA  | 11.92	| 12.80 |
-| FR  &rarr; MSA  | 18.61	| 18.99 |
-| RU  &rarr; MSA  |  26.63	| 28.01 |
+| EN &rarr; MSA   | 17.80 | **18.58** | 
+| DE &rarr; MSA  | 11.92	| **12.80** |
+| FR  &rarr; MSA  | 18.61	| **18.99** |
+| RU  &rarr; MSA  |  26.63	| **28.01** |
 
 Metric is BLEU. All the splits are from UN corpus [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)    
 
