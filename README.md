@@ -4,7 +4,7 @@
 
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
-* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
+* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```news title   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
 * Evaluate  ```AraT5``` models on ```ARGNE``` and compare against available language models.
 
 Our models establish new state-of-the-art (SOTA) on  several publicly available datasets.
