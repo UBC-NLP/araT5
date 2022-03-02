@@ -4,7 +4,7 @@
 
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
-* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```,   ```code-switched translation```;
+* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
 * Evaluate  ```AraT5``` models on ```ARGNE``` and compare against available language models.
 
 Our models establish new state-of-the-art (SOTA) on  several publicly available datasets.
@@ -66,31 +66,32 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 
 
 ### 2.1 Machine Translation
+#### 2.1.1  MSA  To English
 
-#### 2.1.1  Dialictal Arabic
+| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** |  **AraT5** | 
+|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
+|  Bible II [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)                         | Test 1 |  15.58 |  13.04 |  **16.38** |  15.71  | 
+|  Bible II [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)                         | Test 2 |   12.1  | 9.2  | **12.53**  | 11.64 | 
+|  MADAR    [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf)                                     | MSA-EN | **11.84** |  11.11 |  11.42  | 10.57|
+|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED15 | 29.39  | 28.2  | 30.37 |  **30.45**|  
+|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED16 | 28.39  | 27.03 |  **29.37**  | 29.18|  
+|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| QED16 | **21.09**  | 18.55  | 20.98  | 19.11 |  
+|  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | AR-EN |  52.38  | 51.48  |**53.29**  | 52.96|  
+
+
+#### 2.1.2  Dialictal Arabic To English
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ADPT [Zbib et al. (2012)](https://aclanthology.org/N12-1006.pdf)                 | LEV | 8.33 | 8.32 | **8.52** | 8.42  | 
+|  ADPT [Zbib et al. (2012)](https://aclanthology.org/N12-1006.pdf)                 | Lev | 8.33 | 8.32 | **8.52** | 8.42  | 
 |  ADPT [Zbib et al. (2012)](https://aclanthology.org/N12-1006.pdf)                  | Egy | 12.57 | 11.25 | 12.38 | **12.92**  | 
 |  Bible I [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Tun | 8.08 | 5.86 | **8.52** | 7.94|   
 |  Bible I [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
-|  QAraCy  [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | BLEU | **11.84**  | 11.11  | 11.42  | 10.57| 
+|  QAraCy  [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Qat  | **11.84**  | 11.11  | 11.42  | 10.57| 
 
 MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datasets) results are show in Table 6 ([see the paper](https://arxiv.org/abs/2109.12068)) 
  
 
-#### 2.1.2  MSA
-
-| **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
-|----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  Bible II [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)                         | Test 1 |  15.58 |  13.04 |  **16.38** |  15.71  | 
-|  Bible II [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)                         | Test 2 |   12.1  | 9.2  | **12.53**  | 11.64 | 
-|  MADAR I   [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf)                                     | BLEU | **11.84** |  11.11 |  11.42  | 10.57|
-|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED15 | 29.39  | 28.2  | 30.37 |  **30.45**|  
-|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| TED16 | 28.39  | 27.03 |  **29.37**  | 29.18|  
-|  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| QED16 | **21.09**  | 18.55  | 20.98  | 19.11 |  
-|  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | BLEU |  52.38  | 51.48  |**53.29**  | 52.96|  
 
 ### 2.2 Text Summarization
 (1) EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)
@@ -118,8 +119,8 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 ### 2.5 Paraphrasing
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
-|  ARGEN<sub>PPH I</sub> [(Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
-| ARGEN<sub>PPH II</sub> [Alian et al. (2021)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+|  ARGEN<sub>PPH I</sub> [(Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.32 | 18.17 | **19.38** | 19.03  | 
+| ARGEN<sub>PPH II</sub> [Alian et al. (2021)](https://dl.acm.org/doi/abs/10.1145/3368691.3368708) | BLEU | 19.25 | 17.34 | 19.43 | **18.42**|   
 
 ### 2.5 Transliteration
 
