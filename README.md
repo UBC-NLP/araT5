@@ -78,7 +78,7 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |  IWSLT   [Cettolo et al. (2016)](https://workshop2016.iwslt.org/downloads/IWSLT_2016_evaluation_overview.pdf)| QED16 | **21.09**  | 18.55  | 20.98  | 19.11 |  
 |  UN  [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)                                          | AR-EN |  52.38  | 51.48  |**53.29**  | 52.96|  
 
-
+Metric is BLEU. MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datasets) results are show in Table 6 ([see the paper](https://arxiv.org/abs/2109.12068)) 
 #### 2.1.2  Dialictal Arabic To English
 
 | **Dataset**  |  **Test Split** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
@@ -89,24 +89,31 @@ To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for 
 |  Bible I [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Mor |  7.21 | 4.69 | **7.83** | 6.82|   
 |  QAraCy  [Sajjad et al. (2020)](https://aclanthology.org/2020.coling-main.447.pdf)  | Qat  | **11.84**  | 11.11  | 11.42  | 10.57| 
 
-MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datasets) results are show in Table 6 ([see the paper](https://arxiv.org/abs/2109.12068)) 
- 
+Metric is BLEU. 
 
+ 
+#### 2.1.3  Foreign languages To MSA
+
+|  **Spit** | **mT5** | **AraT5<sub>MSA</sub>** |
+|:------:|:----------:|:-----------:|
+| EN &rarr; MSA   | 17.80 | 18.58 | 
+| DE &rarr; MSA  | 11.92	| 12.80 |
+| FR  &rarr; MSA  | 18.61	| 18.99 |
+| RU  &rarr; MSA  |  26.63	| 28.01 |
+
+Metric is BLEU. All the splits are from UN corpus [Ziemski et al. (2016)](https://aclanthology.org/L16-1561.pdf)    
 
 ### 2.2 Text Summarization
-(1) EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)
-|  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** |
-|:------:|:----------:|:-----------:|:-------:|:------:|
-| Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
-| Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
-| RougeL | **62.98** | 60.73 | 59.55 | 54.55 |   
 
-(2) WikiLin [Alami et al. (2021)](https://www.lancaster.ac.uk/people/elhaj/docs/LREC2010-MTurk-Final_v2.pdf)
-|  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** | 
-|:------:|:----------:|:-----------:|:-------:|:------:|
-| Rouge1 |  71.63 | **74.61** | 72.64 |  73.48 |   
-| Rouge2 | 63.60 | **67.00** | 64.21| 65.09 |  
-| RougeL | 71.56 | **74.52**| 72.57 | 73.37|     
+|**Metric** |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **AraT5** |
+|:------:|:------:|:----------:|:-----------:|:-------:|:------:|
+|           | Rouge1 | **62.98** | 60.74  | 59.54 | 54.61 |   
+|EASC [El-Haj et al. (2010)](https://www.sciencedirect.com/science/article/pii/S0957417421000932)| Rouge2 | **51.93** | 48.89 | 47.37 | 43.58 |   
+|             | RougeL | **62.98** | 60.73 | 59.55 | 54.55 |   
+|                   | Rouge1 | 71.63 | **74.61** | 72.64 |  73.48 | 
+|WikiLin [Alami et al. (2021)](https://www.lancaster.ac.uk/people/elhaj/docs/LREC2010-MTurk-Final_v2.pdf)| Rouge2 |63.60 | **67.00** | 64.21| 65.09 |   
+|                  | RougeL | 71.56 | **74.52**| 72.57 | 73.37|   
+ 
 
 
 ### 2.3 News Title and Question Generation
@@ -114,7 +121,7 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
 |  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
-| ARGEN<sub>QG</sub> [Abdul-Mageed et al. (2021)](https://aclanthology.org/2021.acl-long.551.pdf) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
+| ARGEN<sub>QG</sub> [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
 
 ### 2.5 Paraphrasing and Transliteration
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
@@ -133,7 +140,7 @@ MADAR  [Bouamor et al. (2018)](https://aclanthology.org/L18-1535.pdf) (25 datase
 |  MSA-FR &rarr; MSA  | Synthetic| 12.93	| 12.14	| **14.39**	| 13.92 |
 |  MSA-EN &rarr; MSA  | Synthetic  | 19.82	| 18.43	| 23.89	| **24.37** |  
 
-All the **ARGEN<sub>CS</sub>** datasets are from: [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068)
+Metric is BLEU. All the **ARGEN<sub>CS</sub>** datasets are from: [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068)
 
 #  3. How to use AraT5 model
    
