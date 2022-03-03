@@ -59,8 +59,8 @@ We pre-train three powerful variants of the text-to-text transformer (T5) model 
 *  **AraT5**:  trained on both Twitter and MSA data.
 
 
-## 2. ARGNE Benchmark and AraT5 Evaluation
-To  evaluate  our  models, we  also introduce  **ARGNE**,   a new benchmark for   A new benchmark for Arabic language generation and evaluation.   ARGNE is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGNE  is  collected  from  a  total  of  ten datasets, including two new large datasets pro-posed in this work.
+## 2. ARGEN Benchmark and AraT5 Evaluation
+To  evaluate  our  models, we  also introduce  **ARGEN**,   a new benchmark for   A new benchmark for Arabic language generation and evaluation.   ARGNE is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGNE  is  collected  from  a  total  of  ten datasets, including two new large datasets pro-posed in this work.
 
 
 
