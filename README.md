@@ -4,8 +4,8 @@
 
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
-* Introduce **ARGNE**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```news title   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
-* Evaluate  ```AraT5``` models on ```ARGNE``` and compare against available language models.
+* Introduce **ARGEN**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```news title   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
+* Evaluate  ```AraT5``` models on ```ARGEN``` and compare against available language models.
 
 Our models establish new state-of-the-art (SOTA) on  several publicly available datasets.
 Our language models are publicaly available for research (see below).
@@ -19,7 +19,7 @@ The rest of this repository provides more information about our new language mod
   - [1.1 Training Data](#11-training-data)
   - [1.2 Models Architecture](#12-models-architecture)
   - [1.3 AraT5 Models](#13-arat5-models)
-- [2. ARGNE Benchmark and AraT5 Evaluation](#2-our-benchmark-ARGNE)
+- [2. ARGEN Benchmark and AraT5 Evaluation](#2-our-benchmark-ARGEN)
   - [2.1 Machine Translation](#21-machine-translation)
   - [2.2 Text Summarization](#22-text-summarization)
   - [2.3 News Title Generation](#23-news-title-generation)
