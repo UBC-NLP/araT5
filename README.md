@@ -1,6 +1,6 @@
 # AraT5: Text-to-Text Transformers for Arabic Language Generation
 
-<img src="AraT5_CR_new60.png" alt="AraT5" align="right"/>
+<img src="AraT5_CR_new.png" alt="AraT5" width="55%" height="45%" align="right"/>
 
 This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
@@ -22,13 +22,11 @@ The rest of this repository provides more information about our new language mod
 - [2. ARGEN Benchmark and AraT5 Evaluation](#2-our-benchmark-ARGEN)
   - [2.1 Machine Translation](#21-machine-translation)
   - [2.2 Text Summarization](#22-text-summarization)
-  - [2.3 News Title Generation](#23-news-title-generation)
-  - [2.4 Question Generation](#24-question-generation)
-  - [2.5 Paraphrasing](#25-paraphrasing)
-  - [2.6 Transliteration](#26-transliteration)
-  - [2.7 Code-Switched Translation](#27-code-switched-translation) 
+  - [2.3 News Title and Question Generation](#23-news-title-and-question-generation)
+  - [2.4 Paraphrasing and Transliteration](#24-paraphrasing-and-transliteration)
+  - [2.5 Code-Switched Translation](#25-code-switched-translation) 
 - [3. How to use AraT5 model](#3-how-to-use-arat5-model)
-- [4. Ethics](#5-ethics)
+- [4. Ethics](#4-ethics)
 - [5. AraT5 Models Checkpoints](#5-arat5-models-checkpoints)
 - [6. Citation](#6-citation)
 - [7. Acknowledgments](#7-acknowledgments)
@@ -122,7 +120,7 @@ Metric is BLEU. All the splits are from UN corpus [Ziemski et al. (2016)](https:
 |  ARGEN<sub>NTG</sub> [Nagoudi et al., 2020](https://aclanthology.org/2020.wanlp-1.7/)| BLEU | 19.49 | 20.00 | **20.61** | 20.51  | 
 | ARGEN<sub>QG</sub> [Nagoudi et al. (2021)](https://arxiv.org/abs/2109.12068) | BLEU | 15.29 | 12.06 | 14.18 | **16.99**|   
 
-### 2.5 Paraphrasing and Transliteration
+### 2.4 Paraphrasing and Transliteration
 | **Dataset**  |  **Metric** | **mT5** | **AraT5<sub>Tweet</sub>** | **AraT5<sub>MSA</sub>** | **MSA** | 
 |----------------|:------:|:----------:|:-----------:|:-------:|:------:|
 |  ARGEN<sub>PPH I</sub> [Cer et al. (2017)](https://arxiv.org/abs/1708.00055/)| BLEU | 19.32 | 18.17 | **19.38** | 19.03  | 
@@ -144,13 +142,6 @@ Metric is BLEU. All the **ARGEN<sub>CS</sub>** datasets are from: [Nagoudi et al
 #  3. How to use AraT5 model
    
 
-   
-
-   
- 
-   
-
-   
 
 
    
