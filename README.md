@@ -247,17 +247,17 @@ AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website fo
 ## 6. Citation
 If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
 ```
-@inproceedings{nagoudi-2022-arat5,
-    title = "{AraT5: Text-to-Text Transformers for Arabic Language Generation",
-    author = "Nagoudi, El Moatez Billah  and
-      Elmadany, AbdelRahim  and
-      Abdul-Mageed, Muhammad",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
-    month = May,
-    year = "2022",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
+@inproceedings{nagoudi2022_arat5,
+  title={AraT5: Text-to-Text Transformers for Arabic Language Generation},
+  author={Nagoudi, El Moatez Billah and Elmadany, AbdelRahim and Abdul-Mageed, Muhammad},
+  journal={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistic},
+  month = {May},
+  address = {Online},
+  year={2022},
+  publisher = {Association for Computational Linguistics}
 }
+
+
 ```
 
 ---
