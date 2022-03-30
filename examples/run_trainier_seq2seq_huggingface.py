@@ -362,7 +362,7 @@ def main():
         cache_dir=cache_dir,
         revision=model_args.model_revision,
         use_auth_token=True if model_args.use_auth_token else None,
-        local_files_only = True
+        #local_files_only = True
     )
     if model_args.model_name_or_path != "facebook/mbart-large-50-many-to-many-mmt":
         tokenizer = AutoTokenizer.from_pretrained(
@@ -371,7 +371,7 @@ def main():
             use_fast=model_args.use_fast_tokenizer,
             revision=model_args.model_revision,
             use_auth_token=True if model_args.use_auth_token else None,
-            local_files_only = True
+            #local_files_only = True
         )
     else:
         tokenizer = MBart50Tokenizer.from_pretrained(
@@ -380,7 +380,7 @@ def main():
             use_fast=model_args.use_fast_tokenizer,
             revision=model_args.model_revision,
             use_auth_token=True if model_args.use_auth_token else None,
-            local_files_only = True
+            #local_files_only = True
         )
     model = AutoModelForSeq2SeqLM.from_pretrained(
         model_args.model_name_or_path,
@@ -389,7 +389,7 @@ def main():
         cache_dir=cache_dir,
         revision=model_args.model_revision,
         use_auth_token=True if model_args.use_auth_token else None,
-        local_files_only = True
+        #local_files_only = True
     )
 
     # Set decoder_start_token_id
