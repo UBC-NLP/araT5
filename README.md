@@ -2,7 +2,7 @@
 
 <img src="AraT5_CR_new.png" alt="AraT5" width="55%" height="45%" align="right"/>
 
-This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we introduce:
+This is the repository accompanying our paper [AraT5: Text-to-Text Transformers for Arabic Language Understanding and Generation](https://arxiv.org/abs/2109.12068). In this is the repository we:
 * Introduce **AraT5<sub>MSA</sub>**, **AraT5<sub>Tweet</sub>**, and **AraT5**: three powerful Arabic-specific text-to-text Transformer based models;
 * Introduce **ARGEN**:  A new benchmark for Arabic language generation and evaluation for four Arabic NLP tasks, namely, ```machine  translation```,  ```summarization```,  ```news title   generation```,   ```question   generation```, ,   ```paraphrasing```,   ```transliteration```, and  ```code-switched translation```.
 * Evaluate  ```AraT5``` models on ```ARGEN``` and compare against available language models.
@@ -37,27 +37,27 @@ The rest of this repository provides more information about our new language mod
 
 ## 1.1 Training Data
 
-* **MSA Training Data**: We use 70GB of MSA text 7.1B tokens) from the following sources: [AraNews](nagoudi2020machine), [El-Khair](elkhair-2016), [Gigaword](https://catalog.ldc.upenn.edu/LDC2009T30), [OSCAR](suarez2019asynchronous), [OSIAN](zeroual2019osian),  Wikipedia Arabic, and [Hindawi Books](https://www.hindawi.org/books/}{https://www.hindawi.org/books).
+* **MSA Training Data**: We use 70GB of MSA text (7.1B tokens) from the following sources: [AraNews](nagoudi2020machine), [El-Khair](elkhair-2016), [Gigaword](https://catalog.ldc.upenn.edu/LDC2009T30), [OSCAR](suarez2019asynchronous), [OSIAN](zeroual2019osian),  [Wikipedia Arabic](https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9), and [Hindawi Books](https://www.hindawi.org/books/}{https://www.hindawi.org/books).
 
-* **Twitter Training Data**: We randomly sample 1.5B Arabic tweets from a large in-house dataset of about 10B tweets. We use string matching to only include tweets with at least 3 Arabic words, regardless whether the tweet has non-Arabic string or not. The dataset makes up 178GB of text 21B tokens. 
+* **Twitter Training Data**: We randomly sample 1.5B Arabic tweets from a large in-house dataset of about 10B tweets. We use string matching to only include tweets with at least 3 Arabic words, regardless whether the tweet has non-Arabic string or not. The dataset makes up 178GB of text (21B tokens).
 
 
 ## 1.2 Models Architecture
 
-To train our AraT5, we use the same architecture as ```T5-base``` and  ```T5-small``` [(Raffel 2019)](https://arxiv.org/abs/1910.10683) where both  encoder and decoder  has 12 layers each with 12 attention heads, and 768 hidden units.
+To train our AraT5, we use the same architecture as ```T5-base``` and  ```T5-small``` [(Raffel et al 2019)](https://arxiv.org/abs/1910.10683) where both the encoder and decoder have 12 layers each with 12 attention heads and 768 hidden units.
 
 
 ## 1.3 AraT5 Models
 
 
-We pre-train three powerful variants of the text-to-text transformer (T5) model dedicated to Modern Standard Arabic (MSA) and Arabic dialects, AraT5. AraT5 comes. AraT5 comes in three flavors:  
+We pre-train three powerful variants of the text-to-text transformer (T5) model dedicated to Modern Standard Arabic (MSA) and Arabic dialects. AraT5 comes in three flavors:  
 *  **AraT5<sub>MSA</sub>**:  trained on MSA data exclusively
 *  **AraT5<sub>Tweet</sub>**: trained on Twitter data (mix of MSA and dialectal Arabic), 
 *  **AraT5**:  trained on both Twitter and MSA data.
 
 
 ## 2. ARGEN Benchmark and AraT5 Evaluation
-To  evaluate  our  models, we  also introduce  **ARGEN**,   a new benchmark for   A new benchmark for Arabic language generation and evaluation.   ARGEN is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGEN  is  collected  from  a  total  of  ten datasets, including two new large datasets pro-posed in this work.
+To  evaluate  our  models, we  also introduce  **ARGEN**, a new benchmark for Arabic language generation and evaluation. ARGEN is composed of four tasks, namely, ```machine  translation```,  ```summarization```,  ```newstitle   generation```   and   ```question   generation```. ARGEN  is  collected  from  a  total  of  10 datasets, including 2 new large datasets proposed in this work.
 
 
 
@@ -233,7 +233,7 @@ You should be careful about using Twitter data to derive or infer potentially se
 ---
 # 5.  AraT5 Models Checkpoints 
 
-AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website for direct download and use ```exclusively for research```. `For commercial use, please contact the authors via email @ (*muhammad.mageed[at]ubc[dot]ca*).`
+AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website for direct download and use ```exclusively for research```. `For commercial use, please contact the authors via email` [muhammad.mageed@ubc.ca](muhammad.mageed@ubc.ca)
 
 | **Model**   | **Link** | 
 |---------|:------------------:|
