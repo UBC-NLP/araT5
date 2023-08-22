@@ -12,7 +12,18 @@ Our language models are publicaly available for research (see below).
 
 The rest of this repository provides more information about our new language models, benchmark, and experiments.
 
----
+## 🔆 Breaking News !! 🔆
+We're eagled to announce the next version of AraT5
+
+### 🔥 What's new? 🔥
+- **More Data**. AraT5v2 is trained on large and more diverse Arabic data.
+- **Larger Sequence Length**. We increase the sequence length from 512 to 1024 in this version.
+- **Faster Convergence**. On finetuning process, AraT5v2 converges ~10x faster than the previous version (AraT5-base).
+- **Extra IDs**. AraT5v2 supports 100 sentinel tokens (a.k.a unique mask tokens).
+  
+ 🤗 Hugging Face:[https://huggingface.co/UBC-NLP/AraT5v2-base-1024](https://huggingface.co/UBC-NLP/AraT5v2-base-1024) 
+ 
+<span style="color:red"><b>We recommend using AraT5v2-base-1024 instead of the previous version (AraT5-base).</b></span>
 
 ## Table of Contents
 - [1 Our Language Models](#1-Our-Language-Models)
