@@ -12,7 +12,7 @@ Our language models are publicaly available for research (see below).
 
 The rest of this repository provides more information about our new language models, benchmark, and experiments.
 
-## 🔆 Breaking News !! 🔆
+## 🔆 Breaking News! 🔆
 We're eagled to announce the next version of AraT5
 
 ### 🔥 What's new? 🔥
