@@ -257,7 +257,10 @@ AraT5 Pytorch and Tenserflow checkpoints are available on Huggingface website fo
 |🔥**AraT5v2-base-1024**🔥| [https://huggingface.co/UBC-NLP/AraT5v2-base-1024](https://huggingface.co/UBC-NLP/AraT5v2-base-1024) |
 
 ## 6. Citation
-If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
+If you use our AraT5 models for your scientific publication, or if you find the resources in this repository useful, please cite our papers as follows:
+
+**AraT5v1 Models**
+
 ```
 @inproceedings{nagoudi-etal-2022-arat5,
     title = "{A}ra{T}5: Text-to-Text Transformers for {A}rabic Language Generation",
@@ -274,6 +277,7 @@ If you use our AraT5 models for your scientific publication, or if you find the 
 }
 
 ```
+**AraT5v2 Models**
 ```
 @inproceedings{elmadany-etal-2023-octopus,
     title = "Octopus: A Multitask Model and Toolkit for {A}rabic Natural Language Generation",
